@@ -1,29 +1,71 @@
-h1{
-border-width: 1px;
-border-style: solid;
-border-color: black;
-    font-family: verdana;
-    font-size: 72px;
+/*styling for the entire body*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1px;
+    background-color: #f4f4f4;
+}
+/*header styling*/
+header{
+    background-color:#007bff  ;
+    color: white
+    padding: 20px;
     text-align: center;
 }
-p
-{font-size:24px;
-font-family: 'Courier New', Courier, monospace;
-}
-li
-{font-size:20px;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-    h2
-    {border-width: 1px;
-border-style:dotted
-border-color: black;
-    font-family: verdana;  
-    font-size: 36px;
+/*navigation bar styling*/
+nav{
+    background-color: aqua;
+    padding: 10px;
     text-align: center;
+}
+/*container setup for flex layout*/
+.container{
+    display: flex;
+    max-width: 1200px;
+    margin:20px auto;
+    padding: 20px;
+    gap: 20px;
+    background-color: #ffffff
+}
+/*main content area styling*/
+main{
+    flex: 3;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
     }
-    body{
-        background-color: lightblue;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: rgba(0, 26, 255, 0.797);
-        font-size: 20px
+    article{
+        background-color:#28a745;
+padding: 10px;
+margin-bottom: 20px;
+border-left: 5px solid #007bff;
     }
+    /*button styling*/
+    button{
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+button:hover{
+    background-color: #218838;
+}
+/*sidebar styling*/
+aside{
+    flex: 1;
+    background-color: #e2e2e2;
+    padding: 20px;
+    border-radius: 5px;
+    height: fit-content;
+}
+/*footer styling*/
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
